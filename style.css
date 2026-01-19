@@ -275,6 +275,68 @@
     font-weight: bold;
 }
 
+.host-section {
+    padding: 80px 10%;
+    background-color: #1a0b2e;
+    text-align: center;
+    color: white;
+}
+
+.host-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.host-card {
+    background-color: #1a1635; 
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+
+
+.host-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.host-details p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+
+.social-icons{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+ 
+
+ 
+
+}
+ .media-icon{
+    border: 1px solid #cccccc37;
+    height: 30px;
+    padding: 6px;
+    border-radius: 1;
+    
+    
+    
+ 
+
+
+
+
 
 
 
