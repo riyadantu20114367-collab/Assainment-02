@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: #1a0b2e;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+
+}
+.navbar-menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    
+}
+.navbar-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-btn{
+    height: 2.5rem;
+    width: 144px;
+    border-radius: 2rem;
+    background:linear-gradient(to right, #f7e93f, #fb09b4);
+    border: none;
+}
+
+
+/* hero-container */
+
+.hero-container {
+    width: 100%;
+    height: 700px;
+    background-image: url(./assets/hero-bg.png); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.mic-wrapper {
+    position: relative;
+    width: 350px; 
+    height: 350px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-circle {
+    width: 100%;
+    height: auto;
+    position: absolute; 
+    z-index: 1;
+}
+
+.mic-icon {
+    width: 115px; 
+    position: relative;
+    z-index: 2; 
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+
+.btn-spotify {
+    background: linear-gradient(to right, #f7e93f, #fb09b4);
+    border: none;
+    border-radius: 25px;
+    color: black;
+    padding: 10px 20px;
+    margin: 5px;
+    font-weight: bold;
+    height: 3rem;
+    width: 200px;
+}
+.btn-subscribe{
+    height: 3rem;
+    width: 150px;
+    border-radius: 25px;
+    color: #00ff88;
+    background: none;
+    border: 1px solid #00ff88;
+    font-weight: 700;
+}
+
+.about-section {
+    padding: 80px 10%;
+    background-color: #1a0b2e; 
+    text-align: center;
+    color: white;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.join-text {
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 40px;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #00ff88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.stat-box p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.why-choose-section {
+    padding: 80px 10%;
+    background-color: #230e3d; 
+    text-align: center;
+    color: white;
+}
+
+.why-choose-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 35px;
+    border-radius: 20px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-icon {
+    width: 40px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #b0b0b0;
+    line-height: 1.5;
+}
+
+.card-tall {
+    grid-row: span 2;
+}
+
+.card-wide {
+    grid-column: span 2;
+}
+
+
+
