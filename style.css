@@ -5,11 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* body {
+    width: 100%;
+    overflow-x: hidden;
+} */
 .navbar{
     background-color: #1a0b2e;
     display: flex;
     justify-content: space-around;
-    height: 100px;
+    padding: 20px 5%;
     align-items: center;
 
 }
@@ -19,6 +23,14 @@
     gap: 2rem;
     
 }
+.navbar>h1{
+    font-size: 2.2rem;
+}
+.linear-gradient{
+    background: linear-gradient(#f7e93f,#fb09b4,#9100f8);
+    background-clip: text;
+    color: transparent;
+}   
 .navbar-menu a{
     text-decoration: none;
     color: white;
@@ -45,7 +57,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
+    /* position: relative; */
+    padding: 40px 20px;
     color: white;
 }
 
@@ -206,7 +219,6 @@
 }
 
 
-/* Featured Episodes Section */
 .featured-episodes {
     padding: 80px 10%;
     background-color: #1a0b2e;
@@ -232,8 +244,8 @@
     text-align: left;
     transition: 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 380px;
-    height: 400px;
+    /* width: 380px; */
+    width: 100%;
 }
 
 .episode-card:hover {
@@ -320,18 +332,72 @@
     justify-content: start;
     align-items: center;
  
-
- 
-
 }
- .media-icon{
+ .media-icon {
     border: 1px solid #cccccc37;
     height: 30px;
     padding: 6px;
     border-radius: 1;
+}
+
+/* Footer Section Styling */
+.footer-section {
+    width: 100%;
+    height: 412px; 
+    background-image: url('./assets/footer-bg.png');
+    /* background-size: cover;
+    background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.podcast-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.podcast-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.podcast-links a:hover {
+    opacity: 0.7;
+}
+
+
+.footer-icon {
+    width: 20px;
+    height: auto;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+
     
-    
-    
+
  
 
 
