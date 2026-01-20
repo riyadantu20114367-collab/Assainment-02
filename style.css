@@ -9,12 +9,16 @@
     width: 100%;
     overflow-x: hidden;
 } */
+
+/* Navbar Style */
+
 .navbar{
     background-color: #1a0b2e;
     display: flex;
     justify-content: space-around;
     padding: 20px 5%;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
 }
 .navbar-menu{
@@ -45,28 +49,32 @@
 }
 
 
-/* hero-container */
+/* Main hero-container */
 
 .hero-container {
     width: 100%;
-    height: 700px;
-    background-image: url(./assets/hero-bg.png); 
+    min-height: 800px;
+    background-image: url('./assets/hero-bg.png');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    /* position: relative; */
-    padding: 40px 20px;
     color: white;
+    padding: 50px 20px;
 }
+
+.hero-inner-content {
+    text-align: center;
+    max-width: 800px;
+}
+
 
 .mic-wrapper {
     position: relative;
-    width: 350px; 
+    width: 350px;
     height: 350px;
-    margin: 0 auto 20px;
+    margin: 0 auto 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,47 +88,83 @@
 }
 
 .mic-icon {
-    width: 115px; 
-    position: relative;
-    z-index: 2; 
+    width: 120px;
+    height: auto;
+    position: relative; 
+    z-index: 2;
 }
+
+
+.btn-new {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: #00ff88;
+    color: #1a0b2e;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    z-index: 3;
+}
+
 
 .hero-text h1 {
     font-size: 4rem;
     margin-bottom: 10px;
+    font-weight: 900;
 }
 
 .hero-text p {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 30px;
     max-width: 600px;
-    margin: 0 auto 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
- 
-.btn-spotify {
-    display: inline-flex;
+.hero-btns {
+    display: flex;
+    gap: 15px;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.btn-spotify {
     background: linear-gradient(to right, #f7e93f, #fb09b4);
     border: none;
-    border-radius: 25px;
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 30px;
     font-weight: bold;
-    height: 3rem;
-    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
 }
 
-.btn-subscribe{
-    height: 3rem;
-    width: 150px;
-    border-radius: 25px;
-    color: #00ff88;
-    background: none;
+.btn-subscribe {
+    background: transparent;
     border: 1px solid #00ff88;
-    font-weight: 700;
-} 
+    color: #00ff88;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
 
+.hero-btns img {
+    width: 20px;
+}
+
+
+
+/* Main about sectio style */
 
 .about-section {
     padding: 80px 10%;
@@ -171,6 +215,8 @@
     text-transform: uppercase;
 }
 
+/* Main why section style */
+
 .why-choose-section {
     padding: 80px 10%;
     background-color: #230e3d; 
@@ -217,12 +263,18 @@
 
 .card-tall {
     grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
 }
 
 .card-wide {
     grid-column: span 2;
 }
 
+/* Main future episodes style */
 
 .featured-episodes {
     padding: 80px 10%;
@@ -290,7 +342,13 @@
     font-size: 0.85rem;
     color: #00ff88; 
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
+
+/* Main host section style */
+
 
 .host-section {
     padding: 80px 10%;
@@ -304,6 +362,7 @@
     margin-bottom: 40px;
 }
 
+
 .host-card {
     background-color: #1a1635; 
     padding: 50px;
@@ -312,40 +371,65 @@
     align-items: center;
     gap: 40px;
     text-align: left;
+    max-width: 100%px;
+    margin: 0 auto;
 }
 
 
+.host-main-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 .host-details h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
 .host-details p {
     color: #ccc;
     line-height: 1.6;
-    margin-bottom: 15px;
-    font-size: 1rem;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
 }
 
-
-.social-icons{
-    width: 150px;
-    height: 60px;
+.social-icons {
     display: flex;
-    gap: 10px;
-    justify-content: start;
-    align-items: center;
- 
-}
- .media-icon {
-    border: 1px solid #cccccc37;
-    height: 30px;
-    padding: 6px;
-    border-radius: 1;
+    gap: 15px;
 }
 
-/* Footer Section Styling */
+.social-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+
+
+.social-item:hover {
+    background-color: #00ff88;
+    border-color: #00ff88;
+}
+
+.social-item img {
+    width: 18px; 
+    height: auto;
+}
+
+
+
+
+
+/* Footer Section Style */
+
 .footer-section {
     width: 100%;
     height: 412px; 
@@ -398,6 +482,233 @@
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
 }
+.mobile-menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Responsive Style */
+
+@media screen and (max-width: 576px) {
+    
+    .navbar {
+        height: 80px;
+        padding: 0 20px;
+        justify-content: space-between; 
+        position: relative;
+    }
+
+    .navbar-menu, .navbar-btn {
+        display: none; 
+    }
+
+    .mobile-menu-icon {
+        display: block; 
+    }
+    
+    .mobile-menu-icon img {
+        width: 30px; 
+    }
+
+    /* Hero conteiner */
+
+    .hero-container {
+        padding: 40px 15px;
+        min-height: auto;
+    }
+
+    .mic-wrapper {
+        width: 250px; 
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .btn-new {
+        top: 10px;
+        right: 15px;
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem; 
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+   
+    
+    /*   About Section  */
+
+    .about-section {
+        padding: 40px 20px; 
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 2rem; 
+    }
+
+    .about-section p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 100%; 
+    }
+
+    
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-item h2 {
+        font-size: 2.2rem; 
+        margin-bottom: 5px;
+    }
+
+    .stat-item p {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /*   Why Choose Section */
+
+    .why-choose-section {
+        padding: 40px 15px;
+    }
+
+    
+    .cards-grid {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%; 
+        height: auto;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+       
+    }
+
+    
+    .card-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+
+    .card-wide, .card-tall {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+    }
+
+
+     /* Featured Episodes  */
+
+     
+    .episodes-section {
+        padding: 40px 15px;
+    }
+
+    .episodes-grid {
+        display: flex;
+        flex-direction: column; 
+        gap: 25px;
+        align-items: center;
+    }
+
+    .episode-card {
+        width: 100%; 
+        max-width: 350px;
+        height: auto;
+    }
+
+    .episode-img {
+        height: 200px;
+    }
+
+
+    .host-section {
+        padding: 40px 15px;
+    }
+
+    .host-card {
+        flex-direction: column; 
+        text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .host-main-img img {
+        width: 120px; 
+        height: 120px;
+    }
+
+    .social-icons {
+        justify-content: center; 
+        margin-top: 15px;
+    }
+
+    .host-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .host-details p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    /* Footer section */
+
+    .footer-section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        gap: 30px;
+    }
+
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        font-size: 0.75rem;
+        opacity: 0.6;
+    }
+
+}
+
 
 
 
